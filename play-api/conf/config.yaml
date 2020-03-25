@@ -3,3 +3,10 @@ addr: :8080                  # HTTP绑定端口
 name: apiserver              # API Server的名字
 url: http://127.0.0.1:8080   # pingServer函数请求的API服务器的ip:port
 max_ping_count: 10           # pingServer函数try的次数
+
+log:
+  level: debug
+  file: logs/apiserver.log
+  rotate_date: 7            # 最多保存7天
+  rotate_size: 50           # 最大50M，默认100M
+  backup_count: 3           # 最多保存3个日志文件
