@@ -29,7 +29,7 @@ func main() {
 	}
 
 	// 初始化log
-	log.InitLog()
+	log.Init()
 
 	// Set gin mode.
 	gin.SetMode(viper.GetString("runmode"))

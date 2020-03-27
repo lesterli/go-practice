@@ -10,15 +10,17 @@ import (
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 
+// Logger "加糖"
 var Logger *zap.SugaredLogger //global logger
 
-func InitLog() {
+// Init 配置初始化
+func Init() {
 	logLevel := viper.GetString("log.level")
 
 	w := zapcore.AddSync(&lumberjack.Logger{
 		Filename:   viper.GetString("log.file"),
-		MaxSize:    viper.GetInt("log.rotate_size"), // megabytes
-		MaxAge:     viper.GetInt("log.rotate_date"), // days
+		MaxSize:    viper.GetInt("log.rotate_size"),
+		MaxAge:     viper.GetInt("log.rotate_date"),
 		MaxBackups: viper.GetInt("log.backup_count"),
 		LocalTime:  true,
 		Compress:   true,
