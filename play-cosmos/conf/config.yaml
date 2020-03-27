@@ -1,0 +1,26 @@
+# db:
+#  addrs: 192.168.150.7:30000
+# 	user: cosmos
+# 	passwd: cosmospwd
+# 	database: sync_cosmos
+
+# server:
+#   blockchain_monitor_url: 
+#    - tcp://10.90.112.108:1317
+
+# 	worker_num_create_task: 1
+# 	worker_num_execute_task: 60
+
+# 	init_connection_num: 50              # tendermint 客户端池初始数
+# 	max_connection_num: 100              # tendermint 客户端池最大数
+# 	sync_proposal_status: 0 */1 * * * *  # 每分钟
+
+#   network: testnet
+  
+log:
+    level: debug
+    file: logs/sync_cosmos.log
+    rotate_date: 7             # 最多保存7天
+    rotate_size: 20            # 最大50M，默认100M
+    backup_count: 3            # 最多保存3个日志文件
+    enable_atomic_level: false # 是否启用zap的AtomicLevel
