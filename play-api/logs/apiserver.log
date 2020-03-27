@@ -1,6 +1,0 @@
-{"level":"info","ts":"2020-03-25T19:09:05.761+0800","caller":"log/log.go:42","msg":"logger init successful!"}
-{"level":"info","ts":"2020-03-25T19:09:05.785+0800","caller":"play-api/main.go:59","msg":"Start to listening the incoming requests on http address: %s:8080"}
-{"level":"info","ts":"2020-03-25T19:09:06.289+0800","caller":"play-api/main.go:56","msg":"The router has been deployed successfully."}
-{"level":"info","ts":"2020-03-27T18:31:08.037+0800","caller":"log/log.go:44","msg":"logger init successful!"}
-{"level":"info","ts":"2020-03-27T18:31:08.085+0800","caller":"play-api/main.go:59","msg":"Start to listening the incoming requests on http address: %s:8080"}
-{"level":"info","ts":"2020-03-27T18:31:08.589+0800","caller":"play-api/main.go:56","msg":"The router has been deployed successfully."}
