@@ -5,8 +5,8 @@ import (
 )
 
 var (
-	LogLevel          = "debug"
-	FileName          = "logs/sync_cosmos.log"
+	LogLevel          = "info"
+	FileName          = "logs/sync_cosmos_missing.log"
 	MaxSize           = 20
 	MaxAge            = 7
 	MaxBackups        = 3

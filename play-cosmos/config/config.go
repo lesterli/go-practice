@@ -28,9 +28,6 @@ func Init(cfg string) error {
 	// 初始化Log
 	log.Init()
 
-	// 初始化Logger
-	logger.Init()
-
 	// 监控配置文件变化并热加载程序
 	c.watchConfig()
 

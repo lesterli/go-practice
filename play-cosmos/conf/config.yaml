@@ -1,12 +1,12 @@
-# db:
-#  addrs: 192.168.150.7:30000
-# 	user: cosmos
-# 	passwd: cosmospwd
-# 	database: sync_cosmos
+db:
+    addrs: 111.31.105.158:27017
+    user: cosmos
+    passwd: cosmos123
+    database: cosmos    
 
 # server:
 #   blockchain_monitor_url: 
-#    - tcp://10.90.112.108:1317
+#    - tcp://10.99.112.108:1717
 
 # 	worker_num_create_task: 1
 # 	worker_num_execute_task: 60
@@ -15,11 +15,11 @@
 # 	max_connection_num: 100              # tendermint 客户端池最大数
 # 	sync_proposal_status: 0 */1 * * * *  # 每分钟
 
-#   network: testnet
+network: mainnet
   
 log:
     level: debug
-    file: logs/sync_cosmos.log
+    file: logs/sync_cosmos_missing.log
     rotate_date: 7             # 最多保存7天
     rotate_size: 20            # 最大50M，默认100M
     backup_count: 3            # 最多保存3个日志文件

@@ -1,7 +1,7 @@
 package server
 
 var (
-	BlockChainMonitorUrl = []string{"tcp://10.90.112.108:1317"}
+	BlockChainMonitorUrl = []string{"tcp://10.99.112.108:1717"}
 
 	WorkerNumCreateTask  = 1
 	WorkerNumExecuteTask = 60
